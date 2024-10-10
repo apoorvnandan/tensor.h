@@ -1,0 +1,10 @@
+1) Prepare the MNIST dataset in a CSV files. Run the `create_mnist_csv.py` file. You will need torchvision installed.
+
+2) Compile test.c (which uses tensor.h) using gcc. On my macbook, the command looks like this:
+
+```
+gcc-14 -O3 -fopenmp -mcpu=apple-m1 -funroll-loops -o testc test.c
+```
+
+3) Run `./testc`
+
